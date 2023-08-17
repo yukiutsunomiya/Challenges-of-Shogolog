@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100px;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1100px; 
+}
+
+header h3{
+    color: #333;
+    font-family: Lato;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3 img{
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+}
+
+nav ul li{
+    padding:37px 20px 27px 0;
+    color: #333;
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.document-download{
+    margin-bottom: 8px;
+    color: #FFF;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 186px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #006536;
+}
+
+.main-first-view{
+    width: 100%;
+    height: 609px;
+    flex-shrink: 0;
+    background: url(img/first-view.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.main-first-view div{
+    position: absolute;
+    left:  50%; 
+    transform: translate(-50%,0);
+    top:105px;
+}
+
+.main-first-view div h1{
+    color: #333;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200%; /* 76px */
+}
+
+.main-first-view div p{
+    color: #333;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%; /* 28px */
+    margin-bottom: 40px;
+}
+
+.main-first-view div button{
+    position: absolute;
+    left:  50%;
+    transform: translate(-50%,0);
+}
+
+
+
+.content-h2{
+    padding: 40px 0 47px 0;
+    color: #333;
+    font-family: Noto Sans JP;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content-img{
+    width: 100%;
+    height: 191px;
+    flex-shrink: 0;
+}
+
+.footer-view-inner{
+    padding-top: 76px;
+    width: 100%;
+}
+
+.footer-view-inner h2{
+    margin-bottom: 20px;
+}
+
+.footer-view-inner p{
+    margin-bottom: 55px;
+}
+
+.content-h3{
+    color: #006536;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 20px 0;
+}
+
+.content-p{
+    color: #333;
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%; /* 24.5px */
+
+}
+
+.footer-view-section{
+    width: 100%;
+    height: 332px;
+    flex-shrink: 0;
+    background: url(img/footer-view.jpg);
+    background-size: cover;
+}
+
+.footer-view-inner h2{
+    color: #333;
+    font-family: Noto Sans JP;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-view-button-contact,
+.footer-view-button-document-download{
+    color: #FFF;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 186px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 0;
+}
+
+.footer-view-button-contact{
+    background: #4356B7;
+    margin-right: 32px;
+}
+
+.footer-view-button-document-download{
+    background: #006536;
+}
+
+footer{
+    background-color: #333333;
+    width:100%;
+    height: 121px;
+}
+
+footer h3{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 49px;
+    margin-bottom: 15px;
+}
+
+footer h3 span{
+    margin-right: 30px;
+}
+
+footer p{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content-section{
+    background: #F1F5F2;
+    padding-bottom: 58px;
+}
+
+@media screen and (min-width:780px) {
+    .sub-first-view{
+        display: none;
+    }
+}
+
+@media screen and (max-width:780px) {
+    header{
+        width: 100%;
+        height: 72px;
+        flex-shrink: 0;
+    }
+
+    header h3{
+        color: #333;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    h3 img{
+        height: 42px;
+        flex-shrink: 0;
+    }
+
+    .main-first-view{
+        display: none;
+    }
+
+    .sub-first-view{
+        width: 100%;
+        height: 687px;
+        flex-shrink: 0;
+        background: url(img/first-view.jpg);
+        background-size: cover;
+        position: relative;
+    }
+    
+    .sub-first-view div{
+        position: absolute;
+        top: 126px;
+        left: 12px; 
+    }
+    
+    .sub-first-view div h1{
+        color: #333;
+        font-family: Noto Sans JP;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 200%; /* 56px */
+        margin-bottom: 40px;
+    }
+    
+    .sub-first-view div p{
+        color: #333;
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 175%; /* 24.5px */
+    }
+    
+    .sub-first-view div button{
+        position: absolute;
+        
+    }
+
+    .document-download{
+        color: #FFF;
+        font-family: Lato;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 158px;
+        height: 34px;
+        flex-shrink: 0;
+    }
+
+    .content{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        max-width: 400px;
+    }
+
+    nav ul li{
+        display:none;
+    }
+
+    .footer-view-button-contact,
+    .footer-view-button-document-download{
+        color: #FFF;
+        font-family: Noto Sans JP;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 158px;
+        height: 34px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        border: 0;
+    }
+
+    .footer-view-inner h2{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .footer-view-inner p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+}

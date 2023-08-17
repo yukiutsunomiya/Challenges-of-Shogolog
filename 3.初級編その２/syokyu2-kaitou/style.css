@@ -1,0 +1,260 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.pc-br {
+  display: block;
+}
+.sp-br {
+  display: none;
+}
+header {
+  height: 100px;
+}
+.header-inner {
+  max-width: 1140px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-logo h1 a {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+.header-logo h1 a img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-nav-list {
+  display: flex;
+}
+.header-nav-list-item {
+  margin-right: 20px;
+}
+.header-nav-list-item a {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+}
+.cta-btn {
+  color: #fff;
+  display: inline-block;
+  width: 186px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-align: center;
+}
+.cta-btn-download {
+  background-color: #006536;
+}
+.fv {
+  padding: 105px 143px;
+  background-image: url(/img/koretequ-fv.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.fv-main-copy {
+  margin-bottom: 40px;
+  font-size: 38px;
+  color: #333;
+  line-height: 2.0;
+  font-weight: bold;
+}
+.fv-sub-copy {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.75;
+  margin-bottom: 40px;
+}
+.feature {
+  background-color: #F1F5F2;
+  height: 632px;
+}
+.feature-inner {
+  max-width: 1140px;
+  padding: 40px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature-heading {
+text-align: center;
+font-size: 28px;
+font-weight: bold;
+color: #333;
+margin-bottom: 47px;
+}
+.feature-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-box {
+  width: 340px;
+}
+.feature-box figure {
+  height: 194px;
+  margin-bottom: 20px;
+}
+.feature-box figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.feature-box-text-heading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #006536;
+  margin-bottom: 20px;
+}
+.feature-box-text-desc {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.75;
+  font-weight: bold;
+}
+.contact {
+  text-align: center;
+  background-image: url(img/coretequ-contact.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contact-inner {
+  max-width: 1140px;
+  padding: 76px 20px 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+.contact-desc {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+.cta-btn-contact {
+  background-color: #4356B7;
+}
+.mr-32 {
+  margin-right: 32px;
+}
+footer {
+  padding: 49px 0 20px;
+  background-color: #333;
+  text-align: center;
+}
+.footer-inner {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.footer-nav-list-item {
+  color: #fff;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.footer-nav-list-item:last-child {
+  margin-right: 0;
+}
+.copyright {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+@media screen and (max-width: 1070px) {
+	.feature-box {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 821px) {
+	.feature {
+    height: auto;
+  }
+  .feature-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    height: 72px;
+  }
+  .header-logo h1 a {
+    font-size: 24px;
+  }
+  .header-logo h1 a img {
+    width: 42px;
+    height: 42px;
+    margin-right: 5px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .cta-btn {
+    font-size: 15px;
+    width: 158px;
+    height: 34px;
+    line-height: 34px;
+  }
+  .fv {
+    padding: 126px 12px 154px;
+    text-align: left;
+  }
+  .fv-main-copy {
+    font-size: 28px;
+  }
+  .fv-sub-copy {
+    font-size: 14px;
+    margin-bottom: 65px;
+  }
+  .contact-heading {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .contact-desc {
+    font-size: 14px;
+    line-height: 1.5;
+
+  }
+  .mr-32 {
+    margin-right: 0;
+  }
+  .pc-br {
+    display: none;
+  }
+  .sp-br {
+    display: block;
+  }
+}
