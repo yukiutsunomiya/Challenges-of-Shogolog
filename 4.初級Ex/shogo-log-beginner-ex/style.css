@@ -74,7 +74,7 @@ header{
     margin-left: 80px;
 }
 
-.first-view-item h2{
+.first-view-item span{
     writing-mode: vertical-rl;
     font-size: 28px;
     font-weight: bold;
