@@ -2,8 +2,11 @@ body{
     font-family: "Hiragino Kaku Gothic ProN" !important;
     overflow-x: hidden;
     width: 100%;
-    height: 100%;
-    
+    height: 100%;   
+}
+
+.menu-active{
+    display: none;
 }
 
 .container{
@@ -510,7 +513,7 @@ footer > h2{
     font-weight: 600;
 }
 
-.footer-p-first span{
+.footer-p-first span:last-child{
     margin-left:29px ;
 }
 
@@ -528,37 +531,37 @@ a{
 @media screen and (max-width: 850px){
     body{
         overflow-x: hidden;
-      }
-      .header-area{
+    }
+    .header-area{
         display: flex;
         justify-content: space-between;
         height: 65px;
         padding: 0 20px;
         align-items: center;
-      }
-      .hamburger{
+    }
+    .hamburger{
         margin-top: 30px !important;
         width: 40px;
         height: 25px;
         position: relative;
-      }
-      .hamburger span{
+    }
+    .hamburger span{
         position: absolute;
         width: 100%;
         height: 2px;
         background-color: black;
         transition: .5s;/* 追記 */
-      }
-      .hamburger span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+    }
+    .hamburger span:first-of-type{/* ハンバーガーメニューの1番目の線 */
         top: 0;
-      }
-      .hamburger span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+    }
+    .hamburger span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
         top: 50%;
-      }
-      .hamburger span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+    }
+    .hamburger span:last-of-type{/* ハンバーガーメニューの3番目の線 */
         top: 100%;
-      }
-      .slide-menu{
+    }
+    .slide-menu{
         background-color: rgba(0, 0, 0, .8);
         position: fixed;
         top: 65px;
@@ -566,19 +569,19 @@ a{
         left: 0;
         transform: translateX(100%);
         transition: .5s;/* 追記 */
-      }
-      .slide-menu li{
+    }
+    .slide-menu li{
         color: #fff;
         line-height: 400%;
         text-align: center;
-      }
-      .hamburger.active span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+    }
+    .hamburger.active span:first-of-type{/* ハンバーガーメニューの1番目の線 */
         top: 50%;
         transform: rotate(405deg);
-      }
-      .hamburger.active span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+    }
+     .hamburger.active span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
         opacity: 0;/* 透明にする */
-      }
+     }
     .hamburger.active span:last-of-type{/* ハンバーガーメニューの3番目の線 */
         top: 50%;
         transform: rotate(-405deg);
@@ -635,18 +638,7 @@ a{
         width: 418px;
         height: 330px;
     }
-
-        /*
-        position: static;
-        display: block;
-        margin: 0 auto 0 auto;
-        text-align: center;
-        */
-        
-        
-        
     
-
     .first-view div{
         margin: 40px auto 0 auto;
         width: 361px;
@@ -664,8 +656,6 @@ a{
     .pc-button{
         display: none !important;
     }
-
-    
 
     .mb-inner-button{
         display: block;
@@ -715,6 +705,10 @@ a{
     
     .faq dd{
         padding:20px;
+    }
+
+    .footer-p-first span:last-child{
+        margin-left:15px;
     }
 }
 

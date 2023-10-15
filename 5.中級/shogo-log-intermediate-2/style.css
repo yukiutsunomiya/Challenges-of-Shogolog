@@ -4,6 +4,10 @@ body{
     font-family: "Noto Sans JP" !important;
 }
 
+.mb-menu{
+    display: none;
+}
+
 .first-view{
     background-image: url("img/fv.jpg");
     background-size: cover;
@@ -17,8 +21,8 @@ body{
     position: absolute;
     top:112px;
     right: 146px;
-    display: flex !important;
-    flex-direction: row-reverse !important;
+    display: flex ;
+    flex-direction: row-reverse ;
 }
 
 .first-view-box h1,.first-view-box div h1{
@@ -27,7 +31,7 @@ body{
     font-weight: 700;
     letter-spacing: 0.5rem;
     background-color: #FFFFFF;
-    padding: 7px 15px 0 15px;
+    padding: 7px;
     margin-left: 21px;
 }
 
@@ -54,13 +58,13 @@ nav{
     margin: 0 auto;
 }
 
-ul{
+nav > ul{
     display: flex;
     margin: 0 auto !important;
     padding: 0 !important;
 }
 
-li{
+nav> ul > li{
     font-size: 16px;
     font-weight: 700;
     padding-top:88px;
@@ -259,15 +263,17 @@ li{
 .notice-grapes{
     position: absolute;
     right: 0;
-    top: -169;
+    top: -169px;
     width: 235px;
     height: 157px;
     flex-shrink: 0;
+    z-index: 3;
 }
 
 .faq-section{
     background: #FDF9EF;
     padding: 91px 0;
+    position: relative;
 }
 
 .faq-section h2{
@@ -322,6 +328,14 @@ dt img{
     clear: both;
 }
 
+.faq-group{
+    cursor: pointer;
+}
+
+.dd1,.dd2,.dd3,.dd4,.dd5{
+    display: none !important;
+}
+
 .faq-section dd{
     margin-top: 24px;
     color: #4E301B;
@@ -330,22 +344,36 @@ dt img{
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
-}
-
-.access-section{
-    position: relative;
-    margin-bottom: 78px;
-}
-
-.access-section img{
-    position: absolute;
-    left: 2;
-    top:-216;
     
 }
 
+.faq-breakfast1{
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+    z-index: 4;
+    width: 349px;
+    height: 71px;
+    flex-shrink: 0;
+}
+
+.faq-breakfast2{
+    position: absolute;
+    left: 2px;
+    bottom: -124px;
+    z-index: 4;
+    width: 349px;
+    height: 126px;
+    flex-shrink: 0;
+}
+
+.access-section{
+    max-width: 934px;
+    margin:90px auto 78px auto ;
+}
+
 .access-section h2{
-    margin:90px 0 ;
+    margin-bottom:90px;
     color: #4E301B;
     text-align: center;
     font-family: Noto Sans JP;
@@ -355,7 +383,554 @@ dt img{
     line-height: normal;
 }
 
-.inquiry-section{
-    background: #FDF9EF;
+.col-md-6 > iframe{
+    width: 100%;
+    max-width: 443px;
+    height: 334px;
 }
 
+.inquiry-section{
+    background: #FDF9EF;
+    position: relative;
+}
+
+.inquiry-img1{
+    width: 264px;
+    height: 78px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    top:-77px;
+}
+
+.inquiry-img2{
+    width: 264px;
+    height: 77px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+.col-md-6 dl{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 459px;
+}
+
+.col-md-6 dl dt,.col-md-6 dl dd{
+    line-height: 67px;
+    margin: 0;
+    color: #4E301B;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;    
+}
+
+.col-md-6 dl dt {
+    width: 173px;
+    border-top:1px solid #000000;
+}
+
+.col-md-6 dl dd {
+    width: 270px;
+    border-top:1px solid #000000;
+}
+
+.access-last-dt{
+    border-bottom:1px solid #000000;
+    
+}
+.col-md-6 dl dd:last-child{
+    border-bottom:1px solid #000000;
+}
+
+.access-map{
+    max-width: 443px;
+    height: 334px;
+    flex-shrink: 0;
+}
+
+.inquiry-section{
+    background: #FDF9EF;
+    padding: 104px 0 30px 0;
+}
+
+.inquiry-section h2{
+    color: #4E301B;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 67px;
+}
+
+.inquiry-section > p{
+    color: #4E301B;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 93px;
+}
+
+.inquiry-section > div{
+    margin: 0 auto;
+    max-width: 740px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.inquiry-section h3{
+    color: #4E301B;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 37px 0 44px 0;
+    margin: 0;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-item{
+    width: 330px;
+}
+
+.box-input{
+    width: 395px;
+}
+
+.box-input > p{
+    margin-bottom: 10px;
+}
+
+
+.box-input > p:last-child{
+    margin-bottom: 24px;
+}
+
+.box-input > p > label{
+    color: #4E301B;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.box-input > input{
+    width: 100%;
+    max-width: 334px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #EFEAE6;
+}
+
+.box-post-number > input{
+    max-width: 157px ;
+}
+
+.box-input > textarea{
+    width: 334px;
+    height: 170px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #EFEAE6;
+}
+
+.box-item > p{
+    color: #4E301B;
+    padding-left: 76px;
+    padding-bottom: 41px;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding-top: 8px;
+}
+
+.required{
+    width: 50px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FED966;
+    color: #4E301B;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 5px 11px;
+    margin-left: 18px;
+}
+
+.button-inner > button{
+    width: 243px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FED966;
+}
+
+.button-inner{
+    margin: 50px auto 43px auto;
+}
+
+.footer-section{
+    margin-bottom: 97px;
+    position: relative;
+}
+
+.footer-logo{
+    margin: 24px 0 21.28px 0;
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+}
+
+.footer-section > figure{
+    text-align: center;
+}
+
+.inner-svg{
+    width: 275.24px;
+    height: 37.68px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-vector{
+    padding-top: 18px;
+    margin-bottom: 50.69px;
+}
+
+.footer-section > ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-section > ul > li{
+    color: #4E301B;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-section > ul > li:not(:first-child){
+    padding-left: 24px;
+}
+
+.footer-strawberry{
+    width: 297px;
+    height: 167px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    bottom: -97px;
+}
+
+.footer-livestock{
+    width: 237px;
+    height: 162px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    bottom: -97px;
+}
+
+footer{
+    height: 60px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+}
+
+footer > p{
+    text-align: center;
+    color: #4E301B;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top:21px;
+}
+
+.mb-br{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+    .col-md-6 dl dt {
+        width: 40%;
+        border-top:1px solid #000000;
+        padding-left: 10px;
+    }
+    
+    .col-md-6 dl dd {
+        width: 60%;
+        border-top:1px solid #000000;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+
+    .notice-grapes,
+    .faq-breakfast1,.faq-breakfast2,
+    .inquiry-img1,.inquiry-img2,
+    .footer-strawberry,.footer-livestock{
+        display: none;
+    }
+
+    .faq-section > dl,.faq-section > dl > dd{
+        padding: 0 10px;
+    }
+
+    .inquiry-section > p{
+        padding: 0 10px;
+    }
+
+    .notice-section > div{
+        padding: 0 10px;
+    }
+
+    .first-view-box{
+        position: absolute;
+        left: 33px;
+        display: block;
+        margin-top: 400px;
+        
+    }
+    
+    .first-view-box h1,.first-view-box div h1{
+        writing-mode: horizontal-tb;
+        font-size: 20px;
+        letter-spacing:normal;
+        margin-left: 0;
+        display: inline-block;
+        color: #4E301B;
+        font-family: Noto Sans JP;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 24px */
+    }
+    
+    .hamburger-inner{
+        padding: 20px 20px 0 0;
+        float: right;
+
+    }
+
+    .hamburger {
+        position: relative;
+        height: 51px;
+        width: 51px;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: #FED966;
+        border-radius: 50%;
+    }
+
+    .hamburger span {
+        position: absolute;
+        left: 12px;
+        height: 2px;
+        width: 27px;
+        background-color: #444;
+        border-radius: 2px;
+        display: inline-block;
+        box-sizing: border-box;
+        transition: .5s;/* 追記 */
+    }
+    .hamburger span:nth-of-type(1) {
+        bottom: 33px;
+    }
+    .hamburger span:nth-of-type(2) {
+        bottom: 23px;
+    }
+    .hamburger span:nth-of-type(3) {
+        bottom: 13px;
+    }
+
+    .hamburger.active span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+        top: 50%;
+        transform: rotate(405deg);
+    }
+    .hamburger.active span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+        opacity: 0;/* 透明にする */
+     }
+    .hamburger.active span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+        top: 50%;
+        transform: rotate(-405deg);
+    }
+
+    .mb-menu{
+        background: rgba(255, 255, 255, 0.90);
+        margin: 0 auto;
+        height: 668px;
+        flex-shrink: 0;
+    }
+
+    .mb-menu > img{
+        width: 55px;
+        height: 55px;
+        flex-shrink: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .mb-menu > h2{
+        text-align: center;
+    }
+
+    .mb-menu > h2 > figure >img{
+        display: block;
+        margin: 5px auto 50px auto;
+    }
+
+    .mb-menu > ul {
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .mb-menu > ul > li{
+        text-align: center;
+        color: #4E301B;
+        text-align: center;
+        font-family: Noto Sans JP;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+
+    .mb-menu-active{
+        display: block !important;
+    }
+
+    .li-right,.li-right2,.li-left{
+        display: none;
+    }
+
+    .center-li{
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (max-width: 700px){
+    .flexbox{
+        text-align: center;
+    }
+
+    .box-item{
+        margin: 0 auto;
+    }
+
+    .box-item > p{
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 15px;
+    }
+    
+    .box-input{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .mb-box-input-buttom{
+        margin-bottom:30px ;
+    }
+
+    .box-input > p{
+        text-align: center;
+    }
+
+    .box-input > input{
+        text-align: center;
+    }
+
+    .col-md-6 > dl{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .col-md-6 > iframe{
+        margin: 0 auto;
+        display: block;
+    }
+
+    .inquiry-section > h2{
+        padding-bottom: 30px;
+    }
+
+    .mb-br{
+        display: block;
+    }
+    
+    .col-md-6 dl dt {
+        width: 40%;
+        border-top:1px solid #000000;
+        padding-left: 10px;
+    }
+    
+    .col-md-6 dl dd {
+        width: 60%;
+        border-top:1px solid #000000;
+    }
+    
+    .access-last-dt{
+        border-bottom:1px solid #000000;
+    }
+
+    .col-md-6 dl dd:last-child{
+        border-bottom:1px solid #000000;
+    }
+
+    .main-text-box{
+        top: 261px;
+        left: 0;
+        z-index: 2;
+    }
+    
+    .main-text-box p{
+        line-height: 200%; /* 40px */
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .footer-section > ul{
+        display: none;
+    }
+}
